@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <H1 id="title" style="color: red;">Form</H1>
+    <p id="description"><b>Enter the details:-</b></p>
+    
+    <form id="form">
+        
+        <div class="form-group">
+
+            
+            <label for="first-name"><b>Firstname:</b></label><br>
+            <input type="text" id="first-name" placeholder="Firstname" required/>
+            <br>
+            <br>
+        
+            <label for="last-name"><b>Lastname:</b></label><br>
+            <input type="text" id="last-name" placeholder="Lastname" required/>
+            <br>
+            <br>
+            <label for="address"><b>Address:</b></label><br>
+            <textarea name="adress" id="address" placeholder="Address" cols="30" rows="6"></textarea>
+            <br>
+            <br>
+            
+            <legend><b>Choice of food:</b></legend>
+            
+            <input type="checkbox" name="food" id="cBiriyani" class="food" value="Chicken Biriyani">
+            <label for="cBiriyani">Chicken Biriyani</label>
+            <input type="checkbox" name="food" id="mBiriyani" class="food" value="Mutton Biriyani">
+            <label for="mBiriyani">Mutton Biriyani</label>
+            <input type="checkbox" name="food" id="noodles" class="food" value="Noodles">
+            <label for="noodles">Noodles</label>
+            <input type="checkbox" name="food" id="egg" class="food" value="Egg Rice">
+            <label for="egg">Egg Rice</label>
+            <input type="checkbox" name="food" id="meals" class="food" value=">Meals">
+            <label for="meals">Meals</label>
+        
+            
+            <br>
+            <br>
+            <label for="pincode">Pincode:</label><br>
+            <input type="text" name="pincode" id="pincode" placeholder="Pincode" required/>
+            <br>
+            <br>
+            
+            <div id="gender">
+            <legend><b>Gender:</b></legend>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="Male" />
+                    
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female" />
+            </div>
+            <br>
+            <div>
+                <label for="country">Choose Country:</label>
+                <select name="country" id="country">
+    
+                    <option value="">Choose State</option>
+                    <option value="India">India</option>
+                    <option value="America">America</option>
+                    <option value="korea">Korea</option>
+                    <option value="china">China</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+            <label for="state">Choose State:</label>
+            <select name="state" id="state">
+                <option value="">Choose State</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Andhira">Andhira</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit" id="submit" class="btn btn-primary" onclick="details()">Submit</button>
+
+        </div>
+        <br>
+        
+
+
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
